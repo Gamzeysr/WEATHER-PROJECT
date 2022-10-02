@@ -102,9 +102,11 @@ const getWeatherDataFromApi = async () => {
         //!  Burada yukarıda ul nin içindekini onun dısındaki sectionu list olarak burada tanımladım onun içine burada olusturmuş oldugum kullanıcının girecek oldugu li dedğimiz şeyi list e at diyoruz 
 
         // son aradığım ilk olsun diye prepend metonudu kullansak daha iyi o yüzden prependt metodunu kullancaz 👇
-        list.append(createdLi);
+        list.prepend(createdLi);
+        // list.append(createdLi);
         // aşağıda benim aramış oldugum şehir varsa bu kartı eklememeli o yüzden kartı oluşturmadan önce o kartın aynısından var mı diye kontrolunu yapmam lazım yani createdLi yi oluşturmadan önce bunun kontrolunu yapmam lazım 
     }
+
     catch (error) {
         msg.innerText = `404 (City Not Found)`;
         setTimeout(() => {
