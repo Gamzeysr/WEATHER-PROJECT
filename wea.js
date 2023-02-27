@@ -5,7 +5,7 @@ const input = document.querySelector(".container input")
 const msg = document.querySelector("span.msg");
 // kullanıcıya yanlıs girerse uyarı verecek yeri çağırdık
 const list = document.querySelector(".ajax-section .cities");
-// citiesin içinde ki liler yani hava durumu kartları bana kart olarak gelecek 
+// citie clasının içinde ki liler yani hava durumu kartları bana kart olarak yani li olarak gelecek 
 
 // localStorage.setItem("tokenKey", EncryptStringAES("a118c3dd09cb98f52ab2cbf3bb695ffd"));
 // // kullanıcı login oldugunda o kullanıcıyı arka plana alıcaz.Veri tabanından cekicez veri tabanından cektiğimiz token ı  browserın storyısıne atıcaz
